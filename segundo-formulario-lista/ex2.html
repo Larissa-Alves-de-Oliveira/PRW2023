@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="ex2.php" method="post">
+        <fieldset>
+            <legend>Preenchimento de dados</legend>
+            <label for="nome">Nome do paciente:</label>
+            <input type="text" name="nome"><br><br>
+
+            <label for="descricao">Queixa do paciente:</label><br>
+            <textarea name="descricao" name="descricao">
+                Informe a situação do paciente
+            </textarea><br>
+
+            <p>Sexo do paciente:</p>
+            <input type="radio"  name="sexo">
+            <label for="sexo">Homem</label><br>
+            <input type="radio"  name="sexo">
+            <label for="sexo">Mulher</label><br>
+
+            <p>Sintomas Preocupantes:</p>
+            <input type="checkbox"  name="sintoma">
+            <label for="sintoma">Dor de cabeça</label><br>
+            <input type="checkbox"  name="sintoma">
+            <label for="sintoma">Vômito</label><br>
+            <input type="checkbox" name="sintoma">
+            <label for="sintoma"> Tontura</label><br>
+            <input type="checkbox" name="sintoma">
+            <label for="sintoma">Diarreia</label><br>
+
+            <p>Urgência</p>
+            <select name="urgencia">
+                <option>Normal</option>
+                <option>Regular</option>
+                <option>Urgente</option>
+                <option>Emergência</option>
+            </select><br><br>
+
+            <button>Enviar</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
